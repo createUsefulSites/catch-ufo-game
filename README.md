@@ -1,1 +1,1 @@
-catch-ufo-game.netlify.app - site
+https://catch-ufo-game.netlify.app/ - site

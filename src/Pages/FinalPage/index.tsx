@@ -45,19 +45,19 @@ const FinalPage: FC<finalPageProps> = ({ progressCounter, setActiveScene }) => {
                     <div className={styles.share_text}>поделиться</div>
                     <div className={styles.images}>
                         <a
-                            href={`https://t.me/share/url?url=https://vk.com&text=${sharePhrase}`}
+                            href={`https://t.me/share/url?url=https://catch-ufo-game.netlify.app/&text=${sharePhrase}`}
                             target='_blank'
                         >
                             <img className={styles.image} src={tg} alt='telegram' />
                         </a>
                         <a
-                            href={`https://connect.ok.ru/offer?url=https://vk.com&title=${sharePhrase}`}
+                            href={`https://connect.ok.ru/offer?url=https://catch-ufo-game.netlify.app/&title=${sharePhrase}`}
                             target='_blank'
                         >
                             <img className={styles.image} src={ok} alt='одноклассники' />
                         </a>
                         <a
-                            href={`https://vk.com/share.php?url=https://vk.com/&title=${sharePhrase}`}
+                            href={`https://vk.com/share.php?url=https://catch-ufo-game.netlify.app/&title=${sharePhrase}`}
                             target='_blank'
                         >
                             <img className={styles.image} src={vk} alt='вконтакте' />
