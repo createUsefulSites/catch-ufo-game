@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.scss';
 import Game from './Pages/Game';
 import StartMenu from './Pages/StartMenu';
@@ -8,6 +8,10 @@ import FinalPage from './Pages/FinalPage';
 export default function App() {
     const [activeScene, setActiveScene] = useState<number>(1);
     const [progressCounter, setProgressCounter] = useState<number>(0);
+
+    useEffect(() => {
+        document.getElementById('container')!.style.height = window.innerHeight + 'px';
+    }, []);
 
     return (
         <>

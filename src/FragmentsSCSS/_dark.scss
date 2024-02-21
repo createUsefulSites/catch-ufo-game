@@ -6,3 +6,9 @@
     left: 0;
     background-color: rgba(0, 0, 0, 0.7);
 }
+
+@media screen and (min-width: 770px) {
+    .dark {
+        left: -7vw;
+    }
+}
