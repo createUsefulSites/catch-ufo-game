@@ -6,11 +6,12 @@
 }
 
 body {
-    height: -webkit-fill-available !important;
+    height: 100vh;
+    overflow: hidden !important;
 }
 
 #root {
-    height: -webkit-fill-available;
+    height: -webkit-fill-available !important;
     width: 100vw;
     @include flexible();
     * {
@@ -22,7 +23,7 @@ body {
 
 .container {
     width: 100vw;
-    height: -webkit-fill-available;
+    height: -webkit-fill-available !important;
     @include flexible();
     background-image: url(./../src/assets/images/background-main.svg);
     background-position: center;
