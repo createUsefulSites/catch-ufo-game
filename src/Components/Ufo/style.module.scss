@@ -1,0 +1,111 @@
+.wrapper {
+    position: relative;
+    border-radius: 50%;
+    z-index: 1000000;
+    transition: opacity 1s ease-in;
+}
+
+.image {
+    position: relative;
+    width: 120px;
+    z-index: 1000;
+
+    animation: inside_bubble 3s ease-in-out infinite alternate;
+}
+
+// @media screen and (max-width:) {
+
+// }
+
+.bubble {
+    width: 170px;
+    position: absolute;
+    left: -20px;
+    top: -15%;
+    opacity: 1;
+    z-index: 10001;
+}
+
+.dialogue_big_left,
+.dialogue_small_left,
+.dialogue_big_right,
+.dialogue_small_right {
+    position: absolute;
+    width: 220px;
+    height: 100px;
+    opacity: 0;
+    top: 120px;
+    right: 60px;
+    z-index: 10;
+
+    animation: dialogue_anim 3.5s ease 1;
+
+    div {
+        position: absolute;
+        text-align: center;
+        text-shadow: none !important;
+        font-size: 13px;
+        top: 45px;
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        line-height: 18px;
+        z-index: 10;
+    }
+
+    img {
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: 10;
+    }
+}
+
+.dialogue_big_left {
+    right: 70px;
+    width: 160px;
+}
+
+.dialogue_big_right {
+    top: 140px;
+    left: 70px;
+    width: 160px;
+}
+
+.dialogue_small_right {
+    top: 140px;
+    left: 70px;
+}
+
+@keyframes dialogue_anim {
+    20% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        display: none;
+    }
+}
+
+@keyframes inside_bubble {
+    10% {
+        transform: translate(-6%, -6%) rotate(0deg);
+    }
+    25% {
+        transform: translate(8%, 8%) rotate(-10deg);
+    }
+    50% {
+        transform: translate(0%, -8%) rotate(10deg);
+    }
+    75% {
+        transform: translate(8%, -7%) rotate(-5deg);
+    }
+    100% {
+        transform: translate(-8%, -8%) rotate(5deg);
+    }
+}

@@ -1,0 +1,46 @@
+@import './FragmentsSCSS/fonts';
+@import './mixin/mixin';
+
+* {
+    font-family: 'Press Start 2P', system-ui;
+}
+
+#root {
+    height: 100vh;
+    width: 100vw;
+    @include flexible();
+    * {
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.15));
+    }
+    background-color: #242424;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    @include flexible();
+    background-image: url(./../src/assets/images/background-main.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    .main-wrapper {
+        height: 87%;
+        width: 86%;
+        @include flexible();
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .container {
+        width: 450px;
+    }
+    #root {
+        &::before {
+            display: block;
+        }
+    }
+}

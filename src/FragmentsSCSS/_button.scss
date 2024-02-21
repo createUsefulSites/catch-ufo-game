@@ -1,0 +1,26 @@
+button {
+    font-family: 'Open Sans';
+    font-size: 8vw;
+    letter-spacing: 0.75px;
+    border-radius: 4px;
+    padding: 10px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    background-color: #f14338;
+    color: white;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    transition: background-color 0.15s ease-in;
+
+    &:active {
+        top: 1px;
+    }
+    &:hover {
+        background-color: #e63a2d;
+    }
+}
+
+.wider {
+    padding: 10px 13%;
+}

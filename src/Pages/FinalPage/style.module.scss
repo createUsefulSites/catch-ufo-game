@@ -1,0 +1,59 @@
+@import './../../FragmentsSCSS/wood_back';
+@import './../../mixin/mixin.scss';
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: -6.5vh;
+    left: -7vw;
+    background-image: url(./../../assets/images/background-night.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.stars {
+    display: flex;
+    gap: 15px;
+}
+
+.star {
+    width: 60px;
+}
+
+.text_wrapper {
+    @include flexible();
+    max-width: 350px;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    gap: 30px;
+    line-height: 25px;
+}
+
+.header {
+    font-size: 18px;
+}
+
+.text {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.share {
+    @include flexible();
+    flex-direction: column;
+    gap: 25px;
+    color: white;
+    font-size: 15px;
+}
+
+.images {
+    @include flexible();
+    gap: 20px;
+}
+
+.image:active {
+    opacity: 0.7;
+}

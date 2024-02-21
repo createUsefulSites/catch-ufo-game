@@ -1,0 +1,49 @@
+@import './../../FragmentsSCSS/button';
+@import './../../FragmentsSCSS/dark';
+@import './../../mixin/mixin';
+
+.upper_part,
+.bottom_part {
+    @include flexible();
+    flex-direction: column;
+    row-gap: 50px;
+    box-shadow: none;
+
+    .headText {
+        color: #ffbf1a;
+        text-transform: uppercase;
+        font-size: 32px;
+        text-align: center;
+        line-height: 40px;
+    }
+}
+
+button {
+    font-size: 90px !important;
+}
+
+#root {
+    background-image: url(./../src/assets/images/background-main.svg);
+}
+
+#ufo > * {
+    animation: inside_bubble 3s ease-in-out infinite alternate;
+}
+
+@keyframes inside_bubble {
+    10% {
+        transform: translate(-6%, -6%) rotate(0deg);
+    }
+    25% {
+        transform: translate(8%, 8%) rotate(-10deg);
+    }
+    50% {
+        transform: translate(0%, -8%) rotate(10deg);
+    }
+    75% {
+        transform: translate(8%, -7%) rotate(-5deg);
+    }
+    100% {
+        transform: translate(-8%, -8%) rotate(5deg);
+    }
+}

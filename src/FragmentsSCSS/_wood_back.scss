@@ -1,0 +1,21 @@
+@import './../mixin/mixin.scss';
+
+.wood {
+    @include flexible();
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 9vh 0;
+    z-index: 1;
+    background-image: url(./../../assets/images/wood_background.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+    .bottom_part {
+        @include flexible();
+        flex-direction: column;
+        gap: 8vh;
+    }
+}
