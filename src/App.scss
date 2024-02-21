@@ -6,7 +6,7 @@
 }
 
 #root {
-    height: 100vh;
+    height: -webkit-fill-available;
     width: 100vw;
     @include flexible();
     * {
@@ -18,7 +18,7 @@
 
 .container {
     width: 100vw;
-    height: 100vh;
+    height: -webkit-fill-available;
     @include flexible();
     background-image: url(./../src/assets/images/background-main.svg);
     background-position: center;
